@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>LMR</title>
+</head>
+<body>
+    <div class="decoracion-lateral decoracion-izquierda" aria-hidden="true">
+        <span>🌻</span><span>💜</span><span>🌻</span><span>❤️</span><span>🌻</span>
+    </div>
+    <div class="decoracion-lateral decoracion-derecha" aria-hidden="true">
+        <span>💜</span><span>🌻</span><span>❤️</span><span>🌻</span><span>💜</span>
+    </div>
+
+    <div class="titulo">
+    <h1>Bienvenida Luz María Rodriguez</h1>
+    <h1>Este es un regalo para ti</h1> 
+    </div>
+
+    <div class="boton">
+        <button id="boton" type="button" aria-controls="minicuestionario" aria-expanded="false" onclick="mostrarPreguntas()">Recibir Regalo</button>
+    </div>
+    <section class="minicuestionario" id="minicuestionario" aria-labelledby="titulo-cuestionario" hidden>
+        <h2 id="titulo-cuestionario">Primero responde estas preguntas</h2>
+        <p>Cuál es mi nombre completo?</p>
+        <label>
+            <input type="radio" name="pregunta1" value="Santiago Ezequiel Gomez">Santiago Ezequiel Gomez
+        </label>
+        <label>
+            <input type="radio" name="pregunta1" value="Santiago Exequiel Gomez">Santiago Exequiel Gomez
+        </label>
+        <label>
+            <input type="radio" name="pregunta1" value="Santiago Ezequiel Gomez Lopez">Santiago Ezequiel Gomez Lopez
+        </label>
+        <p>Cuál es mi fecha de nacimiento?</p>
+        <label>
+            <input type="radio" name="pregunta2" value="10/06/2003">10/06/2003
+        </label>
+        <label>
+            <input type="radio" name="pregunta2" value="06/11/2003">06/11/2003
+        </label>
+        <label>
+            <input type="radio" name="pregunta2" value="11/06/2003">11/06/2003
+        </label>
+        <p>Cuál es mi color favorito?</p>
+        <label>
+            <input type="radio" name="pregunta3" value="Azul">Azul
+        </label>
+        <label>
+            <input type="radio" name="pregunta3" value="Azul Francia">Azul Francia
+        </label>
+        <label>
+            <input type="radio" name="pregunta3" value="Ambos">Ambos
+        </label>
+        <button id="boton2" type="button" aria-describedby="resultado-cuestionario" onclick="mostrarRegalo()">Enviar</button>
+        <p class="resultado-cuestionario" id="resultado-cuestionario" role="status" aria-live="polite"></p>
+    </section>
+    <article class="carta" id="carta" aria-label="Carta para Luz María" hidden>
+        <p>Primero que nada queria pedirte disculpas por la entrega tardía de estas palabras
+        Nada mas quería decirte que te extraño aprovechando que estas en tu casa jajaja.
+        Pensé en esta carta cuando comenzó la primavera justamente para desearte una feliz
+        primavera, un muy feliz día del estudiante. Quiero que sepas que sos una señora muy
+        inteligente, muy capaz, muy hermosa y muy buena persona.
+        Desde ese día en que te conocí quedé encantado con vos por la manera en la que hablamos,
+        la manera reírme con cada cosa que decías y o sentirme cómodo a tu lado. Luego durante
+        los días en que nos veíamos tenía mucho miedo y trataba de ser lo más correcto posible
+        para que no te aburras de mi jajajajja.
+        Y como soy medio cuadrado e ingeniero pensé en hacerlo de esta manera, no sé que pasará
+        mas adelante pero quiero que sepas que yo pienso en vos todo el tiempo y pasar los días
+        con vos. Si te das cuenta tampoco soy bueno redactando y escribiendo porque me dedico 
+        a la lógica de las cosas y es un poco difícil para mi expresarme BIEN pero hago lo que puedo.
+        Para finalizar te estaré esperando y con ganas de que nuestro cuadernito de alfajores se llene
+        y recorra el mundo. Por cuestiones de la vida dejé de pensar mucho en el futuro pero bueno toca
+        superar y seguir adelante y sin miedo. Espero que una educadora como vos pueda entender a este loco
+        Te quiero luz, Santi.</p>
+    </article>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
